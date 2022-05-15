@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Unlock Accessibility",
+  "version": "10.12.1815",
+  "description": "The extension is imagined as a tool for broadening
+  ones awareness of accessibility and the structure of the digital
+  built environment. This extension add a subsequent layer to the
+  already existing web, to visualize parts of the source code that
+  would otherwise be hidden for non-screen reader users, and to
+  forefront inaccessible elements. Elements with green labels are
+  marked as accessible, pink marks elements where the
+  accessibility of the element is not clearly determined, and
+  elements marked in red defines inaccessible elements. This extension
+  shows a specific perspective on accesibility, as it is defined from
+  the choices of the author of what to mark and what not to mark.",
+  "author": "Ester Marie Aagaard",
+  "icons": {
+   "16": "icon.png",
+   "32": "icon.png",
+   "48": "icon.png",
+   "128": "icon.png"
+ },
+  "content_scripts": [
+    {
+      "matches": [
+      "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
